@@ -4,7 +4,7 @@ using namespace std;
 
 void landed::changeState(string s)
 {
-    if(rocektState::getSate() == "Rocket is busy landing.")
+    if(rocketState::getState() == "Rocket is busy landing.")
     {
         rocketState::changeState(getState());
     }
@@ -14,7 +14,7 @@ void landed::changeState(string s)
     }
 }
 
-string getState()
+string landed::getState()
 {
     return "Rocekt has landed successfully!";
 }
