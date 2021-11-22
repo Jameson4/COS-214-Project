@@ -1,16 +1,16 @@
 #ifndef LANDED_H
 #define LANDED_H
 
-#include "rocektState.h"
+#include "rocketState.h"
 #include <iostream>
 
 using namespace std;
 
-class landed
+class landed : public rocketState
 {
     public:
         void changeState(string);
-        string getState()
+        string getState();
 };
 
 #endif
