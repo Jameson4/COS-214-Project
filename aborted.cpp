@@ -4,17 +4,10 @@ using namespace std;
 
 void aborted::changeState(string s)
 {
-    if(rocketState::getState() == "Rocket has been launched")
-    {
-        rocketState::changeState(s);
-    }
-    else
-    {
-        cout << "Rocket has yet been launched!" << endl;   
-    }
+    rocketState::changeState(s);
 }
 
 string aborted::getState()
 {
-    return "The rocket has been launched";
+    return "The rocket launch has been aborted.";
 }
