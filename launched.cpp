@@ -10,7 +10,7 @@ void launched::changeState(string s)
     }
     else
     {
-        cout << "Rocket is not ready to be launched or has already been launched!" << endl;
+        cout << "Rocket launch has been aborted or has already been launched!" << endl;
     }
 }
 
