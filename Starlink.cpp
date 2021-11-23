@@ -7,20 +7,19 @@ Starlink::Starlink() {}
 
 Starlink::~Starlink() {}
 
-void Starlink::attach(StarlinkSatelite* c) { sate.push_back(c); };
+void Starlink::attach(Communications* c) { comms.push_back(c); };
 
-void Starlink::detach(StarlinkSatelite* c) {
-    for (vector<StarlinkSatelite*>::iterator it = sate.begin();
-         it != sate.end(); ++it) {
+void Starlink::detach(Communications* c) {
+    for (vector<Communications*>::iterator it = comms.begin();
+         it != comms.end(); ++it) {
         if (*it == c) {
-            sate.erase(it);
+            comms.erase(it);
             break;
         }
     }
 }
 
 void Starlink::notify() {
-    for (vector<StarlinkSatelite*>::iterator it = sate.begin();
-         it != sate.end(); ++it)
-        (*it)->update();
+    //for (vector<Communications*>::iterator it = comms.begin();it != comms.end(); ++it)
+        //(*it)->update();
 }

@@ -1,12 +1,19 @@
 #ifndef STARLINKSATELITE_H
 #define STARLINKSATELITE_H
+
 #include "Starlink.h"
+#include "rocketState.h"
+
 using namespace std;
 
-class StarlinkSatelite {  // Observer
+class StarlinkSatelite : public Starlink {  // Concrete Subject
+   private:
+    rocketState* state;
+
    public:
     StarlinkSatelite(){};
     ~StarlinkSatelite(){};
-    virtual void update() = 0;
+    rocketState* getState();
+    void setState(rocketState*);
 };
 #endif

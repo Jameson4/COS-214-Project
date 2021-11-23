@@ -8,6 +8,7 @@ using namespace std;
 class rocketState
 {
     public:
+        rocketState();
         virtual void changeState(string);
         virtual string getState();
     private:

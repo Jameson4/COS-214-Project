@@ -2,6 +2,11 @@
 
 using namespace std;
 
+rocketState::rocketState()
+{
+    state = "Rocket is ready to be launched.";
+}
+
 void rocketState::changeState(string s)
 {
     state = s;

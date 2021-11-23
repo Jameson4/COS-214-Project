@@ -3,6 +3,7 @@
 
 #include "Communications.h"
 #include "StarlinkSatelite.h"
+
 using namespace std;
 
 class Satelite : public StarlinkSatelite {  // Concrete Observer

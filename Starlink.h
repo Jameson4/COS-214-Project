@@ -3,20 +3,19 @@
 #include <string>
 #include <vector>
 
-#include "StarlinkSatelite.h"
-using namespace std;
+#include "Communications.h"
 
-class StarlinkSatelite;
+using namespace std;
 
 class Starlink {  // Subject
    private:
-    vector<StarlinkSatelite *> sate;
+    vector<Communications *> comms;
 
    public:
     Starlink();
     ~Starlink();
-    void attach(StarlinkSatelite *);
-    void detach(StarlinkSatelite *);
+    void attach(Communications *);
+    void detach(Communications *);
     void notify();
 };
 
