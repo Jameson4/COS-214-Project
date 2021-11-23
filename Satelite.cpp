@@ -33,7 +33,15 @@ void Satelite::update() {
                 connection->setState(0);
                 break;
             default:
+                cout << "error" << endl;
                 break;
         }
     }
+}
+
+Satelite* Satelite::clone() {
+    Satelite* rt = new Satelite();
+    rt->connection = this->connection;
+    rt->observerState = this->observerState;
+    return rt;
 }
