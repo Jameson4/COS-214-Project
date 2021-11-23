@@ -15,5 +15,6 @@ class Satelite : public StarlinkSatelite {  // Concrete Observer
     ~Satelite();
     void update();
     void connect(Communications*);
+    Satelite* clone();
 };
 #endif
