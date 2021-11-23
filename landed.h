@@ -9,7 +9,7 @@ using namespace std;
 class landed : public rocketState
 {
     public:
-        void changeState(string);
+        void changeState();
         string getState();
 };
 

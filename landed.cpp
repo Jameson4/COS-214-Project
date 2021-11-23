@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void landed::changeState(string s)
+void landed::changeState()
 {
     if(rocketState::getState() == "Rocket is busy landing.")
     {
