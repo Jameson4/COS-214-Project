@@ -9,7 +9,7 @@ class Communications : public Starlink {  // Concrete Subject
                 // (lasers), 2 = communictaing with users on earth (radio waves)
 
    public:
-    Communications(){};
+    Communications() : state(0){};
     ~Communications(){};
     int getState() { return state; };
     void setState(int s) { state = s; };
